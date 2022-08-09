@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Gun Stats</title>
+
+    <!-- favicon avoid -->
+    <link rel="icon" href="data:;base64,=">
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- styled fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../static/css/style2.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./static/css/style.css"> -->
+</head>
+
+<header>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" style="background-color: rgb(248, 251, 255);" href="">Gun Statistics</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Guns Facts</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">U.S. Map</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="plots.html">Plots</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<br>
+<body id="body">
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1><b>Gun Facts</b></h1>
+                <p id="jumbo">Go ahead, click it...</p>
+                <p id="jumbo"><a class="btn btn-primary btn-lg" href="/index.html" role="button">Get Data!</a></p>
+            </div>
+        </div>
+    
+    <div>
+        <h2 id="h2space"><b>{{listings.Headline}}.</b></h2>
+        <br>
+        <br>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <h2>Firearms per 100 Residents</h2>
+                    <div>
+                        <img id="img1" src="{{listings.Charts[0]}}">
+                    </div>
+                </div>
+                <br>
+                <div class="col-6">
+                    <h2>Citizens weigh in on Gun Laws</h2>
+                    <div>
+                        <img id="img2" src="{{listings.Charts[1]}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    <p>{{listings.Paragraphs[0]}}</p>
+                    <p>{{listings.Paragraphs[1]}}</p>
+                    <p>{{listings.Paragraphs[3]}}</p>
+                </div>
+                <div class="col-6">
+                    <p>{{listings.Paragraphs[2]}}</p>
+                    <h2>Gun Rights Vs. Gun Control</h2>
+                    <img id="img3" src="{{listings.Charts[2]}}">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>    
+    
+        
+
+
+</body>
+<footer> Gun Statistics In the US </footer>
+
+</html>
